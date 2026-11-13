@@ -1,0 +1,36 @@
+{
+  "name": "nasaneso",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "oxlint",
+    "preview": "vite preview",
+    "test": "npx tsx --test tests/unit/recommendationEngine.test.ts tests/unit/seedVarietyEngine.test.ts tests/integration/apiIntegration.test.ts tests/unit/platformAuthAndDatabase.test.ts tests/unit/aiAssistant.test.ts tests/unit/planSpecificAdvisor.test.ts tests/evaluation/agriculturalAdvisorEvaluation.test.ts tests/unit/freeFormAdvisorIntelligence.test.ts tests/unit/cropImagesAndTimeline.test.ts"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.119.0",
+    "chart.js": "^4.6.1",
+    "leaflet": "^1.9.4",
+    "lucide-react": "^1.69.0",
+    "react": "^19.3.1",
+    "react-chartjs-2": "^5.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@types/leaflet": "^1.9.22",
+    "@types/node": "^24.19.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "autoprefixer": "^10.6.2",
+    "oxlint": "^1.90.0",
+    "postcss": "^8.5.32",
+    "tailwindcss": "^3.4.17",
+    "tsx": "^4.23.15",
+    "typescript": "~7.0.2",
+    "vite": "^8.3.6"
+  }
+}
